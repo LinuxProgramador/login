@@ -12,7 +12,8 @@ function login {
 
   clear
   neofetch
-
+  echo -e "\033[1;33mNota: Cantidad de intentos disponibles 10"
+  echo -e "\033[1;37m"
   for _ in 1 2 3 4 5 6 7 8 9 10 ; do
 
      read -sp "ingrese su password: " pass
