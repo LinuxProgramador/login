@@ -17,6 +17,7 @@ function login {
   for _ in 1 2 3 4 5 6 7 8 9 10 ; do
 
      read -sp "ingrese su password: " pass
+     echo ""
      pass=$(echo $pass | shasum -a 512 | cut -f1)
 
      if [ "$pass" = "$password_local" ] ; then
