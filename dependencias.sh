@@ -7,8 +7,8 @@ function dependencies {
  apt install neofetch -y
  clear
 
- read -p "Ingrese la password a utilizar en su login: " pass
- read -p "Repita su password: " pass_validation
+ read -sp "Ingrese la password a utilizar en su login: " pass
+ read -sp "Repita su password: " pass_validation
  if [ "$pass" = "$pass_validation" ] ; then
 
   echo $pass | shasum -a 512 | base64 > /home/.password
