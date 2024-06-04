@@ -8,7 +8,9 @@ function dependencies {
  clear
 
  read -sp "Ingrese la password a utilizar en su login: " pass
+ echo ""
  read -sp "Repita su password: " pass_validation
+ echo ""
  if [ "$pass" = "$pass_validation" ] ; then
 
   echo $pass | shasum -a 512 | base64 > /home/.password
