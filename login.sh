@@ -22,12 +22,13 @@ function login {
 
      if [ "$pass" = "$password_local" ] ; then
         echo "acceso consedido!"
+        pass = ""
         exit
 
      else
          echo "password incorrecta!"
      fi
-
+     
   done
   clear
   echo "Saliendo de userland!"
