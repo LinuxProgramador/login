@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 #Login en bash para userland
 #Elaborado por WhiteHack
