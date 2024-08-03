@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 path=$(pwd | cut -f1)
 
