@@ -22,7 +22,7 @@ function login {
 
      if [ "$pass" = "$password_local" ] ; then
         echo "acceso consedido!"
-        pass =""
+        pass=""
         exit
 
      else
