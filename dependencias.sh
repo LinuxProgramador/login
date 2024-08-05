@@ -4,7 +4,7 @@ path=$(pwd | cut -f1)
 
 function dependencies {
 
- apt install neofetch -y
+ sudo apt install neofetch -y
  clear
 
  read -sp "Ingrese la password a utilizar en su login: " pass
