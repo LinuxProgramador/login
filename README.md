@@ -2,4 +2,4 @@ Login en bash para userland con proteccion de fuerza bruta y codificacion de la 
 
 Nota: solo para Ubuntu
 
-Nota: para Archlinux cambiar shasum por sha512sum desde el paquete coreutils y instalar neofetch desde sudo pacman -S 
+Nota: para Archlinux cambiar shasum por sha512sum en dependencias.sh y login.sh pero antes instalar coreutils,he instalar neofetch desde sudo pacman -S 
