@@ -12,6 +12,7 @@ function login {
   neofetch
   echo -e "\033[1;33mNota: Cantidad de intentos disponibles 10"
   echo -e "\033[1;33mNota: su o su root para superusuario!"
+  echo -e "\033[1;33mNOTA: para actualizar o instalar paquetes, primero acceda al usuario root, ¡¡¡NO USE SUDO!!!!!"
   echo -e "\033[1;37m"
   for _ in {1..10} ; do
      read -sp "ingrese su password: " pass
