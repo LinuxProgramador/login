@@ -35,7 +35,7 @@ function login {
 }
 
 function main {
-   trap "clear && echo 'Opcion invalida!' && sleep 1 &&  kill -9 $Exit" 2 20
+   trap "clear && echo 'Invalid option!' && sleep 1 &&  kill -9 $Exit" 2 20
    if [ "$user" != 'root'  ] ; then
          login
    fi
