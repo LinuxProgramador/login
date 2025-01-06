@@ -1,5 +1,5 @@
-Login en bash para userland con proteccion de fuerza bruta y codificacion de la password
+Bash login for userland with brute force protection and password encryption 
 
-Nota: solo para (Ubuntu/Debian)
+Note: only for (Ubuntu/Debian)
 
-Nota: para Archlinux cambiar shasum por sha512sum en dependencias.sh y login.sh pero antes instalar coreutils,he instalar neofetch desde sudo pacman -S 
+Note: for Archlinux change shasum to sha512sum in dependencies.sh and login.sh but first install coreutils, and install neofetch from sudo pacman -S
