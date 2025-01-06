@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#Login en bash para userland
-#Elaborado por JP Rojas
+#Login in bash for userland
+#Prepared by JP Rojas
 
 Exit=$(ps | grep bash | cut -d'p' -f1 )
 password_local=$(cat /home/.password | base64 -d | cut -f1)
