@@ -10,9 +10,9 @@ user=$(whoami | cut -f1)
 function login {
   clear
   neofetch
-  echo -e "\033[1;33mNota: Number of attempts available 10"
-  echo -e "\033[1;33mNota: su or su root for superuser!"
-  echo -e "\033[1;33mNOTA: To update or install packages, first access the root user, DO NOT USE SUDO!!!!!"
+  echo -e "\033[1;33mNOTE: Number of attempts available 10"
+  echo -e "\033[1;33mNOTE: su or su root for superuser!"
+  echo -e "\033[1;33mNOTE: To update or install packages, first access the root user, DO NOT USE SUDO!!!!!"
   echo -e "\033[1;37m"
   for _ in {1..10} ; do
      read -sp "Enter your password: " pass
