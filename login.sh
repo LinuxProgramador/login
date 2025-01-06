@@ -10,25 +10,25 @@ user=$(whoami | cut -f1)
 function login {
   clear
   neofetch
-  echo -e "\033[1;33mNota: Cantidad de intentos disponibles 10"
-  echo -e "\033[1;33mNota: su o su root para superusuario!"
-  echo -e "\033[1;33mNOTA: para actualizar o instalar paquetes, primero acceda al usuario root, ¡¡¡NO USE SUDO!!!!!"
+  echo -e "\033[1;33mNota: Number of attempts available 10"
+  echo -e "\033[1;33mNota: su or su root for superuser!"
+  echo -e "\033[1;33mNOTA: To update or install packages, first access the root user, DO NOT USE SUDO!!!!!"
   echo -e "\033[1;37m"
   for _ in {1..10} ; do
-     read -sp "ingrese su password: " pass
+     read -sp "Enter your password: " pass
      echo ""
      pass=$(echo $pass | shasum -a 512 | cut -f1)
      if [ "$pass" = "$password_local" ] ; then
-        echo "acceso consedido!"
+        echo "Access granted!"
         pass=""
         exit
 
      else
-         echo "password incorrecta!"
+         echo "Incorrect password!"
      fi
   done
   clear
-  echo "Saliendo de userland!"
+  echo "Leaving userland!"
   sleep 1
   kill -9 $Exit
 
