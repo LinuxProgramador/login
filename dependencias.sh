@@ -5,9 +5,9 @@ path=$(pwd | cut -f1)
 function dependencies {
  sudo apt install neofetch procps -y
  clear
- read -sp "Ingrese la password a utilizar en su login: " pass
+ read -sp "Enter the password to use for your login: " pass
  echo ""
- read -sp "Repita su password: " pass_validation
+ read -sp "Repeat your password: " pass_validation
  echo ""
  if [ "$pass" = "$pass_validation" ] ; then
   echo $pass | shasum -a 512 | base64 > /home/.password
@@ -17,11 +17,11 @@ function dependencies {
   chmod 700 $path/login.sh
   clear
   sleep 1
-  echo "Nota: copiar el login.sh a binarios con (cp login.sh /usr/bin/)."
-  echo "Modificar el archivo bash.bashrc en el directorio (/etc/)"
-  echo "Para abrir siempre el login cuando acceda a userland "
+  echo "Note: copy the login.sh to binaries with (cp login.sh /usr/bin/)."
+  echo "Modify the bash.bashrc file in the (/etc/) directory"
+  echo "To always open the login when accessing userland"
  else
-    echo "password incorrecta!"
+    echo "Incorrect password!"
     exit
  fi
 }
