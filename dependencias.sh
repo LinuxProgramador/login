@@ -11,8 +11,6 @@ function dependencies {
  echo ""
  if [ "$pass" = "$pass_validation" ] ; then
   echo $pass | shasum -a 512 | base64 > /home/.password
-  pass=""
-  pass_validation=""
   chmod 600 /home/.password
   chmod 700 $path/login.sh
   clear
