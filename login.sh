@@ -20,7 +20,6 @@ function login {
      pass=$(echo $pass | shasum -a 512 | cut -f1)
      if [ "$pass" = "$password_local" ] ; then
         echo "Access granted!"
-        pass=""
         exit
 
      else
